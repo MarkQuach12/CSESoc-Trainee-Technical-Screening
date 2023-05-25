@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark's Profile Page</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="assets/style.css"/>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="assets/main.js"></script>
+</head>
+<body>
+    <header class="header">
+        <h2 class="header_title">
+            <span>Mark Quach</span>
+            <i class="fa fa-snowflake umbrella-ico"></i>
+        </h2>
+
+        <nav class="header_navigation">
+            <a href="#Home">Home</a>
+            <a href="#About Me">About Me</a>
+            <a href="#2T1L">2T1L</a>
+            <a href="#Contact">Contact</a>
+        </nav>
+    </header>
+    <a href="#" class="to-top">
+        <i class="fa fa-chevron-up"></i>
+    </a>
+    <br />
+    <div class="content-card" id ="Home" style="background: linear-gradient(to top right, #BAB4FF, #BBDEFC);">
+        <img src="assets/img/snowman.png" width="275px" height="275px">
+        <h1>☃️“Embrace the current season of your life”☃️</h1>
+        <p style="font-family: 'Satoshi Bold'; font-size: 27px">Hello! I'm Mark, and hopefully by the end of the website, you can get to know me a bit better.</p>
+        <p>For those who haven't experienced snow before:</p>
+        <label class="toggle" for="myToggle">
+            <input class="toggle__input" type="checkbox" id="myToggle" onClick="showOrHide()">
+            <div class="toggle__fill"></div>
+        </label>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="content-card" id ="About Me" style="background: linear-gradient(to top right, #8bff74, #fcf95d);">
+        <h1>🌷 About Me 🌷</h1>
+        <p style="font-family: 'Satoshi Bold';">Name: Mark Quach</p>
+        <p style="font-family: 'Satoshi Bold';">Age: 18</p>
+        <p style="font-family: 'Satoshi Bold';">Year of study: 2nd Year</p>
+        <p style="font-family: 'Satoshi Bold';">Degree: Commerce/Computer Science</p>
+        <p style="font-family: 'Satoshi Bold';">Random Fact: You can't hum if you hold your nose</p>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="content-card" id ="2T1L" style="background: linear-gradient(to bottom right, #fff568, #fffc3a);">
+        <h1>☀️ 2 Truths 1 Lie ☀️</h1>
+        <p>Try to work out which one is the lie (hover to find out)</p>
+        <div class="two-truth-one-lie-blocks">
+            <div class="truth_box">
+                <div class="before-text">
+                    <p >I once chundered twice in a single night</p>
+                </div>
+                <div class="after-text">
+                    <p style="font-family: 'Satoshi Bold'">Truth</p>
+                    <p>I might have drank too much that night...</p>
+                </div>
+            </div>
+            <div class="truth_box">
+                <div class="before-text">
+                    <p>Summer is my favourite season</p>
+                </div>
+                <div class="after-text">
+                    <p style="font-family: 'Satoshi Bold'">Truth</p>
+                    <p>Honestly, it's too cold in winter</p>
+                </div>
+            </div>
+            <div class="lie_box">
+                <div class="before-text">
+                    <p>I am left handed</p>
+                </div>
+                <div class="after-text">
+                    <p style="font-family: 'Satoshi Bold'">Lie</p>
+                    <p>I am not left handed, though I would like to be ambidextrous</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="content-card" id ="Contact" style="background: linear-gradient(to bottom right, #ffbc6e, #fd7200);">
+        <h1>🍁 Contact 🍁</h1>
+        <img src="assets/img/tree.png" width="275px" height="275px">
+            <div class="wrapper">
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" class="icon facebook">
+                    <div class="tooltip">Facebook</div>
+                    <span><i class="fab fa-facebook-f"></i></span>
+                </a>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" class="icon twitter">
+                    <div class="tooltip">Twitter</div>
+                    <span><i class="fab fa-twitter"></i></span>
+                </a>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" class="icon instagram">
+                    <div class="tooltip">Instagram</div>
+                    <span><i class="fab fa-instagram"></i></span>
+                </a>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" class="icon github">
+                    <div class="tooltip">Github</div>
+                    <span><i class="fab fa-github"></i></span>
+                </a>
+            </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div id="snow-magic">
+        <div class="snowflakes" aria-hidden="true">
+            <div class="snowflake">
+            ❅
+            </div>
+            <div class="snowflake">
+            ❆
+            </div>
+            <div class="snowflake">
+            ❅
+            </div>
+            <div class="snowflake">
+            ❆
+            </div>
+            <div class="snowflake">
+            ❅
+            </div>
+            <div class="snowflake">
+            ❆
+            </div>
+            <div class="snowflake">
+              ❅
+            </div>
+            <div class="snowflake">
+              ❆
+            </div>
+            <div class="snowflake">
+              ❅
+            </div>
+            <div class="snowflake">
+              ❆
+            </div>
+            <div class="snowflake">
+              ❅
+            </div>
+            <div class="snowflake">
+              ❆
+            </div>
+          </div>
+</body>
+</html>
